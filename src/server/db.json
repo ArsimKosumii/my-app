@@ -1,0 +1,16 @@
+{
+  "cars": [
+    {
+      "car_id": 1,
+      "car_name": "Opel Insignia 2012",
+      "car_fuel_level": 12,
+      "car_kilometers": 211000
+    },
+    {
+      "car_id": 2,
+      "car_name": "VolksWagen Passat B7",
+      "car_fuel_level": 7,
+      "car_kilometers": 189000
+    }
+  ]
+}
