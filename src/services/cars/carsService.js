@@ -5,4 +5,8 @@ const getCars = async () => {
   return await axios.get(`${API_URL}/cars`);
 };
 
-export { getCars };
+const getCarById = async (carId) => {
+  return await axios.get(`${API_URL}/cars/${carId}`);
+};
+
+export { getCars, getCarById };

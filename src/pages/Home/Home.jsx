@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom"
 import PropTypes from 'prop-types'
 import Loader from "../../components/Loader/Loader"
+import Car from "../../components/Car/Car"
+import "./Home.style.css"
 
 const Home = ({ carArray }) => {
     if (!carArray) {
@@ -8,17 +9,11 @@ const Home = ({ carArray }) => {
     }
 
     return (
-        <>
-            <h1>Home</h1>
-            <div className="links">
-                {carArray.map((item, index) => {
-                    return <>
-                        <Link key={index} to={`car/${item.car_id}`}>{item.car_name}</Link>
-                        <br />
-                    </>
-                })}
-            </div>
-        </>
+        <div className="car-links">
+            {carArray.map((item, index) => {
+                return <Car key={index} car={item} />
+            })}
+        </div>
     )
 }
 

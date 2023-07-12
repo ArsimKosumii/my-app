@@ -1,0 +1,12 @@
+.car_image {
+  width: 700px;
+  margin: auto;
+}
+
+.car_details {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}

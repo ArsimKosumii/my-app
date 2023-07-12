@@ -1,0 +1,14 @@
+.car {
+  width: 400px;
+  margin: 10px;
+}
+
+.car_main_image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.car_main_image:hover {
+  object-fit: contain;
+}
